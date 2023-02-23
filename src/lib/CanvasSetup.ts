@@ -60,6 +60,10 @@ export function checkContext(): object {
   const matches = documentUrl.match(regEx)
   if (matches) {
     context.currentPage = matches[1];
+  } else {
+    // must be on the front page, set a default label that hopefully
+    // no-one will accidentally use as the name of a page
+    context.currentPage = "ccc_CourseFrontPage"
   }
 
   // editMode true iff a#easy_student_view exists

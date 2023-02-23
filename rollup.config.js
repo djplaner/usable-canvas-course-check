@@ -18,7 +18,7 @@ export default {
 		sourcemap: false,
 		format: 'iife',
 		name: 'app',
-		file: 'dev/usable-canvas-userscript.js'
+		file: 'dev/usable-canvas-course-check.js'
 	},
 	plugins: [
 
@@ -33,9 +33,8 @@ export default {
 		}),
 
 		css({
-			output: 'usable-canvas-userscript.css'
+			output: 'usable-canvas-course-check.css'
 		}),
-/* - only if you want shoelace style
 		copy({
 			copyOnce: true,
 			targets: [
@@ -44,7 +43,7 @@ export default {
 					dest: path.resolve(__dirname, 'dist/shoelace')
 				}
 			]
-		}), */
+		}), 
 
 		// rollup-plugin-tampermonkey-css
 		((options = {}) => ({

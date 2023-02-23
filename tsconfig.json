@@ -1,7 +1,9 @@
 {
     "extends": "@tsconfig/svelte/tsconfig.json",
     "compilerOptions": {
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "lib": ["es6", "dom", "es2017"],
+        "target": "es6"
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules/*", "dist/*", "dev/*"]

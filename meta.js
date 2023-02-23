@@ -6,7 +6,7 @@ const path = require('path');
 const { pathToFileURL } = require('url');
 const pkg = require('./package.json');
 
-const distURLBase = `https://github.com/djplaner/usable-canvas-userscript/dist`;
+const distURLBase = `https://github.com/djplaner/usable-canvas-course-check/dist`;
 const packageName = pkg.name;
 
 const production = !process.env.ROLLUP_WATCH;
@@ -19,12 +19,12 @@ let meta = {
 	"homepage": pkg.homepage,
 	"author": pkg.author,
     "namespace": "https://djon.es/",
-    "updateURL": "https://github.com/djplaner/usable-canvas-userscript/raw/main/dist/usable-canvas-userscript.user.js",
-    "downloadURL": "https://github.com/djplaner/usable-canvas-userscript/raw/main/dist/usable-canvas-userscript.user.js",
-    "supportURL": "https://github.com/djplaner/usable-canvas-userscript/issues",
+    "updateURL": "https://github.com/djplaner/usable-canvas-course-check/raw/main/dist/usable-canvas-course-check.user.js",
+    "downloadURL": "https://github.com/djplaner/usable-canvas-course-check/raw/main/dist/usable-canvas-course-check.user.js",
+    "supportURL": "https://github.com/djplaner/usable-canvas-course-check/issues",
     "resource": {
 		//css: pathToFileURL(path.join(baseUrl, 'bundle.css'))
-		css: "https://raw.githack.com/djplaner/usable-canvas-userscript/main/dist/usable-canvas-userscript.css"
+		css: "https://raw.githack.com/djplaner/usable-canvas-course-check/main/dist/usable-canvas-course-check.css"
 	},
     "match": [
         "https://*/courses/*"

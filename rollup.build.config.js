@@ -18,7 +18,7 @@ export default [
 			sourcemap: false,
 			format: 'iife',
 			name: 'app',
-			file: 'dist/usable-canvas-userscript.js'
+			file: 'dist/usable-canvas-course-check.js'
 		},
 		plugins: [
 
@@ -33,7 +33,7 @@ export default [
 			}),
 
 			css({
-				output: 'usable-canvas-userscript.css'
+				output: 'usable-canvas-course-check.css'
 			}),
 
 			// If you have external dependencies installed from
@@ -72,7 +72,7 @@ export default [
 			sourcemap: false,
 			format: 'iife',
 			name: 'app',
-			file: 'dist/usable-canvas-userscript.user.js'
+			file: 'dist/usable-canvas-course-check.user.js'
 		},
 		plugins: [
 
@@ -87,7 +87,7 @@ export default [
 			}),
 
 			css({
-				output: 'usable-canvas-userscript.css'
+				output: 'usable-canvas-course-check.css'
 			}), 
 
 			// rollup-plugin-tampermonkey-css
