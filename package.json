@@ -1,0 +1,38 @@
+{
+  "name": "usable-canvas-userscript",
+  "version": "0.0.1-alpha",
+  "description": "Making building Canvas extensions esier",
+  "author": "David Jones",
+  "homepage": "https://github.com/djplaner/usable-canvas-userscript#readme",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.build.config.js",
+    "dev": "rollup -c -w",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "@rollup/plugin-typescript": "^8.5.0",
+    "@tsconfig/svelte": "^2.0.1",
+    "@types/tampermonkey": "^4.0.0",
+    "magic-string": "^0.25.7",
+    "prettier": "^2.8.1",
+    "prettier-plugin-svelte": "^2.9.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "rollup-plugin-userscript-metablock": "^0.2.7",
+    "svelte": "^3.38.2",
+    "svelte-check": "^2.1.0",
+    "svelte-preprocess": "^4.7.3",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+  }
+}

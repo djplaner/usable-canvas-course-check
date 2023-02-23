@@ -1,0 +1,50 @@
+site_name: usage-canvas-userscript
+site_url: https://djplaner.github.io/usable-canvas-userscript/
+repo_url: https://github.com/djplaner/usable-canvas-userscript
+site_author: David Jones
+site_description: >-
+  Build Canvas modifications easier
+
+
+# Configuration
+theme:
+  logo: assets/logo.png
+  name: material
+  font:
+    text: Arial
+  plugins:
+    - social
+  palette:
+    - scheme: youtube
+#      primary: red
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - def_list
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+#extra:
+#  social:
+#    - icon: fontawesome/brands/twitter
+#      link: https://twitter.com/djplaner
+
+nav:
+  - Home: index.md
